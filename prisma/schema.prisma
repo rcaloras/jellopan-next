@@ -10,6 +10,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
+model Event {
+  id        Int     @default(autoincrement()) @id
+  host      String
+  eventDate DateTime @db.Date @map(name: "event_date")
+  album     String
+  ingredient String
+  createdAt DateTime  @default(now()) @map(name: "created_at")
+  updatedAt DateTime  @updatedAt @map(name: "updated_at")
+  @@map(name: "event")
+}
+
+
 model Post {
   id        Int     @default(autoincrement()) @id
   title     String
