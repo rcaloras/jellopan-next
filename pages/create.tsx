@@ -5,14 +5,17 @@ import Layout from '../components/Layout';
 import Router from 'next/router';
 
 const Draft: React.FC = () => {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
+  const [album, setAlbum] = useState('');
+  const [host, setHost] = useState('');
+  const [ingredient, setIngredient] = useState('');
+  const [eventDate, setEventDate] = useState('');
 
   const submitData = async (e: React.SyntheticEvent) => {
     e.preventDefault();
     try {
-      const body = { title, content };
-      await fetch('/api/post', {
+      const body = { album, host, ingredient, eventDate };
+
+      await fetch('/api/event', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
@@ -27,22 +30,35 @@ const Draft: React.FC = () => {
     <Layout>
       <div>
         <form onSubmit={submitData}>
-          <h1>New Draft</h1>
+          <h1>New Jellopan!</h1>
           <input
             autoFocus
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="Title"
+            onChange={(e) => setAlbum(e.target.value)}
+            placeholder="Album Title"
             type="text"
-            value={title}
+            value={album}
           />
-          <textarea
-            cols={50}
-            onChange={(e) => setContent(e.target.value)}
-            placeholder="Content"
-            rows={8}
-            value={content}
+          <input
+            onChange={(e) => setHost(e.target.value)}
+            placeholder="Host"
+            type="text"
+            value={host}
           />
-          <input disabled={!content || !title} type="submit" value="Create" />
+          <input
+            onChange={(e) => setIngredient(e.target.value)}
+            placeholder="Ingredient"
+            type="text"
+            value={ingredient}
+          />
+          Event Date:
+          <input
+            onChange={(e) => setEventDate(e.target.value)}
+            placeholder="Event Date"
+            type="date"
+            value={eventDate}
+          />
+
+          <input disabled={!host || !ingredient} type="submit" value="Create" />
           <a className="back" href="#" onClick={() => Router.push('/')}>
             or Cancel
           </a>
@@ -58,6 +74,7 @@ const Draft: React.FC = () => {
         }
 
         input[type='text'],
+        input[type='date'],
         textarea {
           width: 100%;
           padding: 0.5rem;

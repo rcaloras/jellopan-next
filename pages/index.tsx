@@ -1,17 +1,15 @@
 import React from "react"
 import { GetStaticProps } from "next"
 import Layout from "../components/Layout"
-import Post, { PostProps } from "../components/Post"
+import Event, { EventProps } from "../components/Event"
 import prisma from '../lib/prisma';
 import Link from 'next/link';
 import safeJsonStringify from 'safe-json-stringify';
 
 export const getStaticProps: GetStaticProps = async () => {
-  const feed = await prisma.event.findMany({
+  const feed = JSON.parse(safeJsonStringify(await prisma.event.findMany({
     where: { },
-  });
-
-  console.log(feed)
+  })));
 
   return {
     props: { feed },
@@ -20,23 +18,23 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 type Props = {
-  feed: PostProps[]
+  feed: EventProps[]
 }
 
 const Blog: React.FC<Props> = (props) => {
   return (
     <Layout>
       <div className="page">
-        <h1>Public Feed</h1>
+        <h1>Jello Pans</h1>
         <Link href="/create">
           <button>
-            <a>New post</a>
+            <a>Add a new JP Event</a>
           </button>
         </Link>
         <main>
-          {props.feed.map((post) => (
-            <div key={post.id} className="post">
-              <Post post={post} />
+          {props.feed.map((event) => (
+            <div key={event.id} className="post">
+              <Event event={event} />
             </div>
           ))}
         </main>

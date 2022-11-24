@@ -2,37 +2,33 @@ import React from "react"
 import { GetServerSideProps } from "next"
 import ReactMarkdown from "react-markdown"
 import Layout from "../../components/Layout"
-import { PostProps } from "../../components/Post"
+import { EventProps } from "../../components/Event"
 import prisma from '../../lib/prisma';
+import safeJsonStringify from 'safe-json-stringify';
+
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-  const post = await prisma.post.findUnique({
-    where: { id: Number(params?.id),
-    },
-    include: {
-      author: {
-        select: { name: true },
-      },
-    },
-  });
+
+  console.log("Params "+ params?.id)
+  const event = JSON.parse(safeJsonStringify(await prisma.event.findUnique({
+    where: { id: Number(params?.id) },
+  })));
 
   return {
-    props: post,
+    props: event,
   }
 }
 
-const Post: React.FC<PostProps> = (props) => {
-  let title = props.title
-  if (!props.published) {
-    title = `${title} (Draft)`
-  }
+const Event: React.FC<EventProps> = (props) => {
 
   return (
     <Layout>
       <div>
-        <h2>{title}</h2>
-        <p>By {props?.author?.name || "Unknown author"}</p>
-        <ReactMarkdown children={props.content} />
+        <h2>Album: {props.album}</h2>
+        <p>Hosted By {props.host}</p>
+        <p>Ingredient: {props.ingredient}</p>
+        <p>{new Date(props.eventDate).toLocaleDateString()}</p>
+        <p>Created At: {new Date(props.createdAt).toLocaleDateString()}</p>
       </div>
       <style jsx>{`
         .page {
@@ -59,4 +55,4 @@ const Post: React.FC<PostProps> = (props) => {
   )
 }
 
-export default Post
+export default Event
