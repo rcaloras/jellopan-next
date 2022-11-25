@@ -33,16 +33,16 @@ const Draft: React.FC = () => {
           <h1>New Jellopan!</h1>
           <input
             autoFocus
-            onChange={(e) => setAlbum(e.target.value)}
-            placeholder="Album Title"
-            type="text"
-            value={album}
-          />
-          <input
             onChange={(e) => setHost(e.target.value)}
             placeholder="Host"
             type="text"
             value={host}
+          />
+          <input
+            onChange={(e) => setAlbum(e.target.value)}
+            placeholder="Album Title"
+            type="text"
+            value={album}
           />
           <input
             onChange={(e) => setIngredient(e.target.value)}
