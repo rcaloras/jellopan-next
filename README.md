@@ -1,7 +1,7 @@
 # Jellopan.com 2.0
-
-# Importing into Postgres
-Can import into Postgres using the original db presevred as a csv
+New version of https://github.com/Benuuu/JelloPan
+## Importing into Postgres
+Can import into Postgres using the original db preserved as a csv
 ```bash
 psql -d 'jellopan' -c "COPY event(host, event_date, album, ingredient, created_at, updated_at) FROM "\'$PWD/public/events_db.csv\'" DELIMITER ',' CSV HEADER;"
 ```
