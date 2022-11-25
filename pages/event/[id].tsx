@@ -26,8 +26,8 @@ const Event: React.FC<EventProps> = (props) => {
       <div>
         <h2>Album: {props.album}</h2>
         <p>Hosted By {props.host}</p>
+        <p>Event Date: {new Date(props.eventDate).toLocaleDateString()}</p>
         <p>Ingredient: {props.ingredient}</p>
-        <p>{new Date(props.eventDate).toLocaleDateString()}</p>
         <p>Created At: {new Date(props.createdAt).toLocaleDateString()}</p>
       </div>
       <style jsx>{`

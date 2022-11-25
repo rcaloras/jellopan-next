@@ -31,12 +31,24 @@ const Blog: React.FC<Props> = (props) => {
           </button>
         </Link>
         <main>
-          {props.feed.map((event) => (
-            <div key={event.id} className="event-cell">
+          <table className="table table-hover table-bordered">
+            <thead>
+              <tr>
+              <th scope="col">Host</th>
+              <th scope="col">Event Date</th>
+              <th scope="col">Album</th>
+              <th scope="col">Ingredient</th>
+              </tr>
+            </thead>
+            <tbody className="table-group-divider">
+            {props.feed.map((event) => (
               <Event event={event} />
-            </div>
-          ))}
+            ))}
+
+            </tbody>
+          </table>
         </main>
+
       </div>
     </Layout>
   )
