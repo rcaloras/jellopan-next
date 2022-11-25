@@ -25,7 +25,6 @@ const Blog: React.FC<Props> = (props) => {
   return (
     <Layout>
       <div className="page">
-        <h1>Jello Pans</h1>
         <Link href="/create">
           <button>
             <a>Add a new JP Event</a>

@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.center-nav {
+    text-align: center;
+    padding: 2rem;
+}
+
+.logo-image {
+    max-height: 120px;
+
+    @media (max-width: 768px) {
+        max-height: 80px;
+    }
+}

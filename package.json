@@ -12,11 +12,13 @@
   "license": "MIT",
   "dependencies": {
     "@prisma/client": "^4.6.1",
+    "bootstrap": "^5.2.3",
     "next": "^12.3.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-markdown": "8.0.0",
-    "safe-json-stringify": "^1.2.0"
+    "safe-json-stringify": "^1.2.0",
+    "sass": "^1.56.1"
   },
   "devDependencies": {
     "@types/node": "17.0.14",

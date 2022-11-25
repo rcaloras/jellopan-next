@@ -14,14 +14,6 @@ const Header: React.FC = () => {
           <img alt="Brand" className="logo-image" src="/jellopan-logo-transparent.png"/>
         </a>
       </Link>
-      <style jsx>{`
-        .center-nav {
-          text-align: center;
-        }
-        .logo-image {
-          max-height: 100px;
-        }
-      `}</style>
     </div>
   );
 

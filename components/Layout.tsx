@@ -1,12 +1,16 @@
 import React, { ReactNode } from "react";
 import Header from "./Header";
+import Head from "next/head";
 
 type Props = {
   children: ReactNode;
 };
 
 const Layout: React.FC<Props> = (props) => (
-  <div>
+  <div className="container">
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </Head>
     <Header />
     <div className="layout">{props.children}</div>
     <style jsx global>{`
