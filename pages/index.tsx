@@ -26,7 +26,7 @@ const Blog: React.FC<Props> = (props) => {
     <Layout>
       <div className="page">
         <Link href="/create">
-          <button>
+          <button className="btn btn-light add-btn">
             <a>Add a new JP Event</a>
           </button>
         </Link>
@@ -38,20 +38,6 @@ const Blog: React.FC<Props> = (props) => {
           ))}
         </main>
       </div>
-      <style jsx>{`
-        .post {
-          background: white;
-          transition: box-shadow 0.1s ease-in;
-        }
-
-        .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
-        }
-
-        .post + .post {
-          margin-top: 2rem;
-        }
-      `}</style>
     </Layout>
   )
 }
