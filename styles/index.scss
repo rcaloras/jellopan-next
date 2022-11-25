@@ -1,5 +1,11 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
+
+.event-cell {
+
+}
+
 .center-nav {
     text-align: center;
     padding: 2rem;
@@ -15,17 +21,14 @@
 
 .add-btn {
     margin: 10px 0;
+    font-weight: 500;
 }
 
-.post {
+.event-cell {
     background: white;
     transition: box-shadow 0.1s ease-in;
 }
 
-.post:hover {
+.event-cell:hover {
     box-shadow: 1px 1px 3px #aaa;
-}
-
-.post+.post {
-    margin-top: 2rem;
 }

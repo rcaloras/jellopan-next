@@ -32,7 +32,7 @@ const Blog: React.FC<Props> = (props) => {
         </Link>
         <main>
           {props.feed.map((event) => (
-            <div key={event.id} className="post">
+            <div key={event.id} className="event-cell">
               <Event event={event} />
             </div>
           ))}

@@ -16,7 +16,7 @@ model Event {
   host      String
   eventDate DateTime @db.Date @map(name: "event_date")
   album     String
-  ingredient String
+  ingredient String?
   createdAt DateTime  @default(now()) @map(name: "created_at")
   updatedAt DateTime  @updatedAt @map(name: "updated_at")
   @@map(name: "event")
