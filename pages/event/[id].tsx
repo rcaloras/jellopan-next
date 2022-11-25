@@ -5,52 +5,53 @@ import Layout from "../../components/Layout"
 import { EventProps } from "../../components/Event"
 import prisma from '../../lib/prisma';
 import safeJsonStringify from 'safe-json-stringify';
+import Router from 'next/router';
 
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-
-  console.log("Params "+ params?.id)
   const event = JSON.parse(safeJsonStringify(await prisma.event.findUnique({
     where: { id: Number(params?.id) },
   })));
 
   return {
-    props: event,
+    props: event ? event : {},
   }
 }
 
 const Event: React.FC<EventProps> = (props) => {
 
+  const deleteEvent = async (e: React.SyntheticEvent) => {
+    e.preventDefault();
+
+    // confirm we want to delete this
+    var confirm = window.confirm("Delete this item?")
+    if (!confirm) {
+      return;
+    }
+
+    try {
+      await fetch(`/api/event/${props.id}`, {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      await Router.push('/');
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <Layout>
       <div>
-        <h2>Album: {props.album}</h2>
-        <p>Hosted By {props.host}</p>
-        <p>Event Date: {new Date(props.eventDate).toLocaleDateString()}</p>
-        <p>Ingredient: {props.ingredient}</p>
-        <p>Created At: {new Date(props.createdAt).toLocaleDateString()}</p>
+        <ul className='event-page-list'>
+        <li>Album: {props.album}</li>
+        <li>Hosted By: {props.host}</li>
+        <li>Event Date: {new Date(props.eventDate).toLocaleDateString()}</li>
+        <li>Ingredient: {props.ingredient}</li>
+        <li>Created At: {new Date(props.createdAt).toLocaleDateString()}</li>
+        </ul>
+        <button type="button" className="btn btn-danger" onClick={deleteEvent}>Delete</button>
       </div>
-      <style jsx>{`
-        .page {
-          background: white;
-          padding: 2rem;
-        }
-
-        .actions {
-          margin-top: 2rem;
-        }
-
-        button {
-          background: #ececec;
-          border: 0;
-          border-radius: 0.125rem;
-          padding: 1rem 2rem;
-        }
-
-        button + button {
-          margin-left: 1rem;
-        }
-      `}</style>
     </Layout>
   )
 }

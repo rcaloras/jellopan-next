@@ -1,14 +1,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
-
-.event-cell {
-
-}
-
 .center-nav {
     text-align: center;
     padding: 2rem;
+}
+
+.event-page-list {
+    list-style: none;
+    padding: 0;
 }
 
 .logo-image {

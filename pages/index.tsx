@@ -42,9 +42,8 @@ const Blog: React.FC<Props> = (props) => {
             </thead>
             <tbody className="table-group-divider">
             {props.feed.map((event) => (
-              <Event event={event} />
+              <Event key={event.id} event={event} />
             ))}
-
             </tbody>
           </table>
         </main>

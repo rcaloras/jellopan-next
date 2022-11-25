@@ -58,7 +58,7 @@ const Draft: React.FC = () => {
             value={eventDate}
           />
 
-          <input disabled={!host || !ingredient} type="submit" value="Create" />
+          <input disabled={!host || !eventDate || ! album} type="submit" value="Create" />
           <a className="back" href="#" onClick={() => Router.push('/')}>
             or Cancel
           </a>

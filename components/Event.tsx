@@ -14,7 +14,7 @@ export type EventProps = {
 
 const Event: React.FC<{ event: EventProps }> = ({ event }) => {
   return (
-    <tr key={event.id} onClick={() => Router.push("/event/[id]", `/event/${event.id}`)}>
+    <tr onClick={() => Router.push("/event/[id]", `/event/${event.id}`)}>
         <th scope="row">{event.host}</th>
         <td>{new Date(event.eventDate).toLocaleDateString()}</td>
         <td>{event.album}</td>
