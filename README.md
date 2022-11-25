@@ -1,3 +1,9 @@
-# Fullstack Authentication Example with Next.js and NextAuth.js
+# Jellopan.com 2.0
+
+# Importing into Postgres
+Can import into Postgres using the original db presevred as a csv
+```bash
+psql -d 'jellopan' -c "COPY event(host, event_date, album, ingredient, created_at, updated_at) FROM "\'$PWD/public/events_db.csv\'" DELIMITER ',' CSV HEADER;"
+```
 
 This is the starter project for the fullstack tutorial with Next.js and Prisma. You can find the final version of this project in the [`final`](https://github.com/prisma/blogr-nextjs-prisma/tree/final) branch of this repo.

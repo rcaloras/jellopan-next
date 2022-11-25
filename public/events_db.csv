@@ -1,0 +1,48 @@
+host,event_date,album,ingredient,created_at,updated_at
+"Ryan, Mat, Arjun",2008-11-01,Led Zeppelin - Physical Graffiti ,???,2012-11-24 03:27:26.253,2012-11-24 03:27:26.253
+"Mat, Ryan, and Arjun",2008-12-12,Weezer (blue album) - Weezer,???,2013-12-01 02:04:30.501,2013-12-01 02:04:30.501
+"Mat, Pete, Ryan, and Arjun",2009-10-24,Michael Jackson - Thriller,Peach Nectar + Shark Bites,2013-11-25 04:45:56.211,2013-11-25 04:46:06.164
+Brian Manning,2009-11-01,Maroon - Barenaked Ladies,???,2013-12-01 02:03:20.685,2013-12-01 02:03:20.685
+Brian Manning,2010-02-01,Welcome Interstate Managers - Fountains of Wayne,???,2013-12-01 02:02:35.664,2013-12-01 02:02:35.664
+Kevin Li,2010-05-11,Postal Service - GIve UP,?,2013-05-25 02:27:23.968,2013-05-25 02:27:23.968
+Brian Manning,2010-10-01,Comfort Eagle - CAKE,???,2013-12-01 02:01:58.067,2013-12-01 02:08:07.972
+Arjun Mat Pete,2011-04-02,LCD Soundsystem Farewell Concert,Skittles vodka?,2012-10-18 04:11:50.181,2012-10-19 01:25:11.035
+Ben Wu,2011-09-09,El Ten Eleven - It's Still Like A Secret (???),Four Loko,2012-10-18 05:12:51.358,2012-10-18 05:13:44.151
+VB 2012,2012-06-04,Queen Rock Montreal,Monster Energy Drink,2012-10-18 05:43:38.269,2013-06-01 03:18:06.591
+Brian Manning,2012-09-08,Enema of the State,Arnold Palmer,2012-10-17 09:38:52.998,2012-10-17 12:21:55.623
+Ben Wu,2012-10-20,Erlend Øye - DJ Kicks,PBR,2012-10-18 05:13:27.455,2012-10-20 15:04:56.059
+Ben Wu,2012-11-24,How Do You Do - Mayer Hawthorne,Cinnamon Applesauce ,2012-11-25 21:54:02.419,2012-11-25 21:54:02.419
+Mat,2012-12-15,A laurum by Johnny Flynn,Sparkling Lime Drank,2012-12-27 23:42:49.501,2012-12-28 02:57:08.835
+Ben Wu,2013-01-18,Macklemore - The Heist,Gummy worms,2013-01-19 03:44:20.893,2013-01-23 21:40:21.090
+James,2013-02-15,Björk - Homogenic ,Pepsi,2013-02-19 07:31:01.228,2013-02-19 07:31:01.228
+Erika,2013-03-02,MIA - Kala,Ginger beer,2013-03-03 01:58:30.827,2013-03-03 01:58:30.827
+Joe Burgess,2013-04-05,The Best Of Shaggy - The Boombastic Collection,"Gin, Tonic, Apple Schnapps, watermelon and lemon Jell-o",2013-04-06 21:43:43.083,2013-04-06 21:43:43.083
+Ben Wu,2013-05-17,Daft Punk - Random Access Memories,IBC Root Beer,2013-05-18 06:25:04.898,2013-05-18 06:25:04.898
+VB 2013,2013-05-27,Sublime - Sublime,Tequila; Sweet Tea Vodka; Whipped Cream Vodka,2013-06-01 03:17:53.551,2013-06-01 03:17:53.551
+Nancy,2013-06-09,Cayucas,"Lychee, peach nectar",2013-06-09 02:02:49.314,2013-06-09 22:30:03.738
+Stephanie Schneider ,2013-07-04,Daft Punk - Random Access Memories,"Peach schnapps, pina colada mix, blue raspberry drink, blue raspberry vodka",2013-07-08 20:11:20.122,2013-07-08 20:11:20.122
+Manning,2013-07-13,Classics - Ratatat,Sparkling cider,2013-07-14 03:09:59.908,2013-07-14 03:09:59.908
+Burgess,2013-08-11,Keasbey Nights,Drunk Joe,2013-08-11 03:36:45.421,2013-08-11 03:36:45.421
+Rrrrrahul,2013-08-30,Moby - Play,V8 Tropical Splash in one. Sangria and Orange Peach Mango drank.,2013-08-31 16:26:21.465,2013-08-31 16:26:21.465
+Lynn,2013-10-19,True (Avicii),1) Champagne 2) Sangria,2013-12-17 05:54:02.083,2013-12-17 05:54:02.083
+Parkington,2013-11-16,Sticks and Stones - New Found Glory,Honey,2013-11-18 00:22:28.693,2013-11-18 00:22:28.693
+Manning and Ben,2013-11-16,Third Eye Blind - Third Eye Blind,Root beer,2013-11-18 00:21:31.022,2013-11-18 00:21:31.022
+Meredith,2013-12-01,Sgt. Pepper's Lonely Hearts Club Band,Swedish Fish,2013-12-01 03:26:34.182,2013-12-01 03:26:34.182
+Joe Burgess,2014-01-01,Good News for People Who Love Bad News - Modest Mouse,,2015-01-02 04:46:19.618,2015-01-02 04:46:19.618
+VB 2014,2014-09-01,Guardians of the Galaxy Soundtrack,????,2014-12-21 21:14:19.598,2014-12-21 21:14:19.598
+"Lizzy Augustine, Chris Soo",2015-01-01,Turn The Radio Off - Reel Big Fish,champagne/lime & strawberry/grenadine,2015-01-02 05:54:16.132,2015-01-03 19:48:15.000
+Brian Manning,2015-03-13,The Zombies - Odyssey and Oracle,Apple Cider,2015-03-19 23:21:53.013,2015-03-19 23:21:53.013
+Ben Wu,2015-03-20,Hot Chip - The Warning,Pineapple Juice,2015-05-08 00:25:40.197,2015-05-08 00:25:40.197
+Ryan and Luyba,2015-05-17,Beastie Boys - To the 5 Boroughs,Starbucks FraPPUCCINO,2015-05-17 02:54:25.784,2015-05-17 16:59:28.356
+VB 2015,2015-09-07,Jimmy Eat World - ???,???,2020-07-19 20:21:52.323,2020-07-19 20:21:52.323
+VB 2016,2016-09-04,Carly Rae Jepsen - Emotion ,,2016-09-12 02:47:40.018,2016-09-12 02:47:40.018
+Jing and Steph,2017-02-17,Oh Wonder - Oh Wonder,Pink Lemonade and Lime Juice,2017-02-18 04:16:07.315,2017-02-18 04:16:07.315
+Brian Manning,2017-06-11,Jack's Mannequin - Everything in Transit,Chardonnay,2017-06-11 01:56:33.588,2017-06-11 01:56:51.402
+Peter Ross,2017-07-22,Linkin Park - [Hybrid Theory],Plum wine,2017-07-23 18:00:58.231,2017-07-23 18:01:55.380
+VB 2017,2017-09-03,Kendrick Lamar - DAMN.,Cran-Ras La Croix,2017-09-09 23:23:36.637,2018-05-19 16:14:58.302
+Kevin Li,2018-08-03,Chance - Coloring Book,Mango Juice,2018-08-04 22:26:02.778,2018-08-04 22:27:10.768
+VB 2018,2018-09-02,Janelle Monáe - Dirty Computer,Dr. Pepper,2018-09-20 16:09:48.190,2018-09-20 16:09:48.190
+Brian and Katie,2018-09-22,She's So Unusual — Cyndi Lauper,Lychee juice,2018-09-23 19:23:02.584,2018-09-23 19:23:02.584
+Meg and Ben,2019-03-16,Like a Prayer,"Pan 1 - Sprite, Pan 2 - Coke",2019-03-20 01:25:50.817,2019-03-20 01:25:50.817
+VB 10,2019-09-01,Passion Pit - Manners,"Pocari Sweat, ???",2019-09-03 19:02:27.013,2019-09-03 19:02:27.013
+VB 2020 - Virtual,2020-09-06,Anderson .Paak - Malibu,Many,2020-09-08 13:39:31.972,2020-09-08 13:39:31.972
