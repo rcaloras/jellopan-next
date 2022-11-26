@@ -31,7 +31,7 @@ const Blog: React.FC<Props> = (props) => {
           </button>
         </Link>
         <main>
-          <table className="table table-hover table-bordered">
+          <table className="table table-hover table-bordered event-table">
             <thead>
               <tr>
               <th scope="col">Host</th>
@@ -47,7 +47,6 @@ const Blog: React.FC<Props> = (props) => {
             </tbody>
           </table>
         </main>
-
       </div>
     </Layout>
   )
