@@ -22,3 +22,4 @@ psql -d 'jellopan' -c "\COPY event(host, event_date, album, ingredient, created_
 ```
 
 This is the starter project for the fullstack tutorial with Next.js and Prisma. You can find the final version of this project in the [`final`](https://github.com/prisma/blogr-nextjs-prisma/tree/final) branch of this repo.
+
