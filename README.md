@@ -13,12 +13,20 @@ yarn run dev
 yarn prisma generate
 # Apply to database schema
 yarn prisma db push
+# Can apply against production by setting DATABASE_URL prior to running
+DATABASE_URL='postgresql://....' yarn prisma db push
 ```
 
 ## Importing into Postgres
 Can import into Postgres using the original db preserved as a csv. Does a 'client side' copy.
+
+*Locally*
 ```bash
 psql -d 'jellopan' -c "\COPY event(host, event_date, album, ingredient, created_at, updated_at) FROM "\'$PWD/public/events_db.csv\'" DELIMITER ',' CSV HEADER;"
+```
+*Against Production*
+```bash
+psql -d $DATABASE_URL -c "\COPY event(host, event_date, album, ingredient, created_at, updated_at) FROM '$PWD/public/events_db.csv' DELIMITER ',' CSV HEADER;"
 ```
 
 This is the starter project for the fullstack tutorial with Next.js and Prisma. You can find the final version of this project in the [`final`](https://github.com/prisma/blogr-nextjs-prisma/tree/final) branch of this repo.
